@@ -1,0 +1,435 @@
+body {
+  margin: 10px 80px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+    url("https://web.archive.org/web/20090830212201im_/http://www.geocities.com/clipart/pbi//backgrounds/Template_Pages/stars_bg.gif");
+  font-family: "Times New Roman", Times, serif;
+  padding: 65px;
+
+  @media only screen and (max-width: 414px) {
+    margin: 0;
+  }
+}
+
+h1,
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+p,
+li {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 414px) {
+  .welcome-message {
+    margin-bottom: -25px;
+  }
+}
+
+.navbar {
+  margin-bottom: 2rem;
+  position: relative;
+}
+.navbar-page {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.navbar a,
+.navbar li {
+  font-family: "Octin Sports";
+  color: white;
+  font-size: 24px;
+}
+
+.row {
+  display: flex;
+}
+.row-top {
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 414px) {
+  .row-top {
+    gap: 60px;
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+  }
+}
+
+.row-bottom {
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 414px) {
+  .row-bottom {
+    gap: 25px;
+  }
+}
+
+.home-container {
+  text-align: center;
+}
+
+.hero-logo {
+  display: block;
+  margin: 100px auto;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 414px) {
+  .hero-poster {
+    height: 250px;
+    width: 150px;
+  }
+}
+
+.home-container a {
+  font: bold 26px Arial;
+  text-decoration: none;
+  background-color: #eeeeee;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #cccccc;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #cccccc;
+}
+
+#home-movie-title {
+  margin-top: 80px;
+}
+
+#page-cast:before,
+#page-interview:before,
+#page-soundtrack:before,
+#page-reviews:before,
+#page-game:before,
+#page-trivia:before,
+#page-store:before,
+#page-about:before {
+  content: "";
+  background-size: contain;
+  width: 70px;
+  height: 50px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#page-reviews,
+#page-trivia {
+  margin-top: -16rem;
+}
+
+@media only screen and (max-width: 414px) {
+  #page-reviews,
+  #page-trivia {
+    margin-top: -10rem;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  #page-trivia {
+    margin-left: -6rem;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  #page-store {
+    margin-left: -3rem;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .welcome-message {
+    margin-bottom: -25px;
+  }
+}
+
+.sign-up {
+  font-size: 30px;
+  color: rgb(230, 23, 23);
+  align-items: center;
+  justify-content: flex-start;
+}
+.sign-up:before,
+.sign-up:after {
+  content: "";
+  display: inline-flex;
+  background-size: 75px;
+  height: 75px;
+  width: 75px;
+  background-repeat: no-repeat;
+  background-image: url("https://alaco-assets.s3.amazonaws.com/alaco-logo-transparent.png");
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* scroll bar */
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: lightgrey;
+  outline: 1px solid slategrey;
+}
+
+.store-item {
+  display: inline-block;
+  margin: 40px;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.page-item {
+  display: block;
+  position: absolute;
+  background: #64b966;
+  padding: 30px;
+  border-radius: 10px;
+  width: auto;
+  border: 5px dashed red;
+  animation: border-pulsate 1s infinite;
+}
+
+.page-item a {
+  color: white;
+}
+
+@keyframes border-pulsate {
+  0% {
+    border-color: red;
+  }
+  80% {
+    border-color: white;
+  }
+  100% {
+    border-color: red;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .navbar a {
+    font-size: 18px;
+  }
+}
+
+.display-none {
+  display: none;
+}
+
+.marquee-div {
+  width: 500px;
+}
+
+.marquee {
+  position: absolute;
+  animation: marquee 20s infinite;
+  word-wrap: none;
+}
+
+@media only screen and (max-width: 414px) {
+  .marquee-div {
+    width: 250px;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    right: 0;
+  }
+  20% {
+    right: 45%;
+    opacity: 1;
+  }
+  30% {
+    right: 45%;
+    opacity: 1;
+  }
+  80% {
+    right: 120%;
+    opacity: 1;
+  }
+  81% {
+    opacity: 0;
+  }
+
+  100% {
+    right: 0;
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  @-webkit-keyframes marquee {
+    0% {
+      right: 0;
+    }
+    30% {
+      right: 45%;
+      opacity: 1;
+    }
+    60% {
+      right: 120%;
+      opacity: 1;
+    }
+    61% {
+      opacity: 0;
+    }
+
+    100% {
+      right: 0;
+      opacity: 0;
+    }
+  }
+}
+
+#page-cast:before {
+  background-image: url("https://web.archive.org/web/20090723173557im_/http://www.geocities.com/wannawin.geo/trophy1.gif");
+}
+
+#page-interview:before {
+  background-image: url("https://web.archive.org/web/20091021131017/http://www.geocities.com/charliemaryguo/girlCheer_jumper_md_clr60_100.gif");
+}
+#page-soundtrack:before {
+  background-image: url("https://web.archive.org/web/20091022153245im_/http://www.geocities.com/musictheoryinfo/notespin.gif");
+}
+#page-game:before {
+  background-image: url("https://alaco-assets.s3.amazonaws.com/pole-vault.png");
+}
+#page-reviews:before {
+  background-image: url("https://web.archive.org/web/20091026214635im_/http://geocities.com/mpamphsx/images/olympics.gif");
+}
+#page-store:before {
+  background-image: url("../assets/images/his-cart.png");
+}
+#page-trivia:before {
+  background-image: url("https://web.archive.org/web/20020308061458/http://geocities.com:80/seniorolympics/usf261b36.gif");
+}
+#page-about:before {
+  background-image: url("https://alaco-assets.s3.amazonaws.com/winner.png");
+}
+.row a:before {
+  background-image: url("https://web.archive.org/web/20091027092626im_/http://geocities.com/pdchalfmarathon/j0219117.gif");
+}
+
+// store
+
+[id^="joinUs"] {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+[id^="joinUs"]:target {
+  display: block;
+}
+input[type="checkbox"] {
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+.popup {
+  width: 500px;
+  height: 300px;
+  z-index: 99999;
+}
+.popup p {
+  font-family: "Times New Roman", Times, serif;
+}
+.popup__overlay {
+  position: fixed;
+  z-index: 1;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 300px;
+  width: 500px;
+}
+.popup__wrapper {
+  position: fixed;
+  height: 140px;
+  width: 550px;
+  z-index: 9;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+  padding: 58px 32px 32px 32px;
+  background: lightgray;
+  border: 1px solid gray;
+}
+.popup__close {
+  position: absolute;
+  top: 16px;
+  right: 26px;
+}
+
+.drink-popup {
+  bottom: 0%;
+  left: 10%;
+}
+
+.tee-popup {
+  bottom: 0%;
+  left: 10%;
+}
+
+.energy-popup {
+  bottom: 17%;
+  left: 19%;
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btn-report {
+  display: block;
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  margin-left: auto;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  background-color: red;
+  color: white;
+  font-size: 30px;
+  box-shadow: 0 0 38px #ea5050;
+  cursor: pointer;
+  border: 0;
+
+  &:active {
+    box-shadow: 0 5px #ea5050;
+    transform: translateY(4px);
+  }
+
+  @media only screen and (max-width: 414px) {
+    width: 80%;
+    right: unset;
+    border-radius: 10px;
+    height: 45px;
+    bottom: 3%;
+  }
+}
